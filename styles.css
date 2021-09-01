@@ -7,7 +7,7 @@
 div.container{
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     height: 50vh;
 
     background-color: black;
@@ -17,14 +17,48 @@ div.container div.ball{
     width: 100px;
     height: 100px;
     background-color: rgb(150, 231, 74);
-    transition-duration: 0.9s;
+    transition-duration: 3s;
     transition-timing-function:
 }
 
-div.container div.ball:hover{
+div.container:hover div.ball{
+    animation-duration: 2s;
+    animation-name: stylish-rotate;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
     border-radius: 50%;
     cursor: pointer;
-    transform: rotate(60deg);
-    transform: scale(2);
-    background-color: cadetblue;
+    transform: rotate(360deg);
+    background-color: rgb(75, 189, 218);
+}
+
+@keyframes stylish-rotate{
+    0% {
+        background-color: violet;
+        transform: translatey(100px);
+    }
+    14%{
+        background: indigo;
+    }
+    20%{
+        background: blue;
+        
+    }
+    42%{
+        background-color: green;
+    }
+    56%{
+        background-color: yellow;
+    }
+    70%{
+        background-color: orange;
+    }
+    84%{
+        background-color: red;
+        
+    }
+    100%{
+        background: white;
+        transform: rotateZ(120deg);
+    }
 }
