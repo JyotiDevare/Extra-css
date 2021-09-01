@@ -1,0 +1,30 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+div.container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 50vh;
+
+    background-color: black;
+}
+
+div.container div.ball{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(150, 231, 74);
+    transition-duration: 0.9s;
+    transition-timing-function:
+}
+
+div.container div.ball:hover{
+    border-radius: 50%;
+    cursor: pointer;
+    transform: rotate(60deg);
+    transform: scale(2);
+    background-color: cadetblue;
+}
