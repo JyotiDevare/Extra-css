@@ -1,0 +1,17 @@
+div.child{
+    width: 100px;
+    height: 100px;
+    background-color: cyan;
+}
+
+div.child:hover{
+    background-color: blue;
+}
+
+input:focus{
+    background-color: orange !important;
+}
+
+div.selection{
+    background-color: orchid;
+}
